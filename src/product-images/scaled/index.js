@@ -41,7 +41,9 @@ export const imagesImg6 = [img6Sm, img6Md, img6Lg, img6Xl]
 export const imagesImg7 = [img7Sm, img7Md, img7Lg, img7Xl]
 export const imagesImg8 = [img8Sm, img8Md, img8Lg, img8Xl]
 
-export const images = [imagesImg1, imagesImg2, imagesImg3, imagesImg4, imagesImg5, imagesImg6, imagesImg7, imagesImg8]
+
+export const images = [imagesImg7, imagesImg2, imagesImg2, imagesImg4, imagesImg4, imagesImg7]
+
 
 export const generateSrcSet = (images) => {
     const [imgSm, imgMd, imgLg, imgXl] = images

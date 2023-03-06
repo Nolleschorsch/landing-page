@@ -1,6 +1,96 @@
+body {
+    background: rgb(26, 188, 156);
+    background: linear-gradient(0deg, rgba(26, 188, 156, 1) 0%, rgba(43, 113, 54, 1) 53%);
+}
+
 #jumbotron {
     color: white;
     background-position: center center;
+    min-height: 90vh;
+}
+
+#jumbotron-text {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#footer {
+    background: rgb(5, 60, 5);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
+}
+
+a.youtube {
+    color: #eb3223;
+}
+
+a.facebook {
+    color: #4968ad;
+}
+
+a.twitter {
+    color: #49a1eb;
+}
+
+a.instagram {
+    color: black;
+}
+
+.product-card {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .product-card {
+        margin: .3rem;
+        height: auto;
+    }
+}
+
+.product-card ul {
+    list-style: square;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: rgb(20, 90, 20);
+    border: solid rgb(20, 90, 20) 0.3rem;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: white;
+    color: rgb(10, 70, 10);
+    border: solid rgb(10, 70, 10) 0.3rem;
+    font-weight: bold;
+}
+
+.navbar-green {
+    background-color: rgb(5, 60, 5);
+    color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {

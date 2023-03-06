@@ -46,7 +46,7 @@ export const Newsletter = () => {
         setTimeout(() => {
             setSubmitComplete(true)
             const msg = Math.floor(Math.random() * 10 + 1) > 1 //  fails 1 out of 10 times on average
-                ? `The signup process has for ${email} was successful.`
+                ? `The signup process for ${email} was successful.`
                 : `Something went wrong, please try again later.`;
             setSubmitResponse(msg);
         }, 1000)
@@ -54,7 +54,7 @@ export const Newsletter = () => {
 
     return (
         <>
-            <Button variant="flat" onClick={handleShow} style={{}}>
+            <Button variant="green" id="newsletter" onClick={handleShow} className="mb-5">
                 Newsletter Signup
             </Button>
 
@@ -84,7 +84,7 @@ export const Newsletter = () => {
                         ? <Button variant="flat" onClick={handleClose}>Close</Button>
                         : <>
                             <Button className="me-auto" variant="danger" onClick={handleClose}>Abort</Button>
-                            <Button variant="flat" onClick={handleSubmit} disabled={!validated}>
+                            <Button variant="green" onClick={handleSubmit} disabled={!validated}>
                                 Signup
                             </Button>
                         </>
