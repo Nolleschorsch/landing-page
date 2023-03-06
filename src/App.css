@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Archivo';
+    src: local('Archivo'), url(./fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf) format('truetype');
+}
+
 body {
     background: rgb(26, 188, 156);
     background: linear-gradient(0deg, rgba(26, 188, 156, 1) 0%, rgba(43, 113, 54, 1) 53%);
+    font-family: 'Archivo', sans-serif;
 }
 
 #jumbotron {
